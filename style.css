@@ -166,6 +166,7 @@ body {
 .main {
   width: 100%;
   background-color: #fff;
+  margin-top: 60px;
 }
 
 .main-wrapper {
@@ -214,7 +215,11 @@ hr {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  margin: 10px;
+}
+
+.seen-image {
+  display: flex;
+  justify-content: center;
 }
 
 .seen-image img {
@@ -227,15 +232,14 @@ hr {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 10px;
   }
 
   .seen-header h1 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .seen-image img {
-    width: 100%;
+    width: 70%;
     height: 100%;
   }
 
