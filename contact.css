@@ -8,7 +8,8 @@ html {
   box-sizing: border-box;
 }
 
-a, a:hover {
+a,
+a:hover {
   color: inherit;
   text-decoration: none;
 }
@@ -85,7 +86,8 @@ body {
     margin: 10px 0;
   }
 
-  .navbar-nav, .navbar-nav .dropdown-menu {
+  .navbar-nav,
+  .navbar-nav .dropdown-menu {
     width: 100%;
   }
 }
@@ -164,30 +166,87 @@ body {
 /* HEADER SECTION */
 /* FORM SECTION */
 .form {
-  background-color: #fff;
+  background-color: #d2cda430;
   padding: 70px 0;
 }
 
+.form-header-box{
+  margin-top: 20px;
+}
+
+.form-header-box>h2{
+  font-size: 50px;
+  font-weight: 600;
+  color: #000;
+}
+
+.form-header-box>h4 {
+  font-size: 18px;
+  color: #777a7d;
+}
+
+.form-header-box>h2,
+.form-header-box>h4 {
+  text-align: center;
+}
+
 .form-address-box {
+  background: #469049;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.form-contact-box{
   margin-top: 50px;
 }
 
-.form-address, .form-header {
-  font-size: 40px;
+.form-content,
+.form-address-box {
+  border-radius: 8px;
+}
+
+.form-address-header,
+.form-address-sub,
+.form-contact-box>p {
+  color: #fff;
+}
+
+.form-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 50px;
+  background-color: #fff;
+  margin: 50px 0;
+}
+
+.form-icon {
+  color: #f7e6e8;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.form-address {
+  margin-bottom: 50px;
+}
+
+.form-address-header {
+  font-size: 20px;
   font-weight: 600;
+}
+
+.form-address-sub,
+.form-contact-box>p {
+  font-size: 13px;
 }
 
 .form-header {
   margin-bottom: 25px;
 }
 
-.form-address-box>p {
-  font-size: 18px;
-}
-
 form {
-  margin: 50px 0;
   width: auto;
+  padding: 20px;
 }
 
 label {
@@ -205,9 +264,9 @@ label {
 }
 
 .form .btn {
-  background: #7dbe40;
+  background: #469049;
   color: #000000;
-  border: 1px solid #7dbe40;
+  border: 1px solid #469049;
   padding: 0 20px;
   text-align: center;
   cursor: pointer;
@@ -230,13 +289,36 @@ label {
     padding-bottom: 50px;
   }
 
+  .form-content {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  .form-contact-box {
+    margin-top: 0;
+  }
+
+  .form-address-box {
+    border-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .form-address-header {
+    font-size: 15px;
+  }
+
   .form-container {
     max-width: 90rem;
     padding: 0 30px;
   }
 
-  .form-header, .form-address {
+  .form-header-box>h2 {
     font-size: 30px;
+  }
+
+  .form-header-box>h4 {
+    font-size: 15px;
   }
 
   label {
