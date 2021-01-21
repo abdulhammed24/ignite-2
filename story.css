@@ -163,14 +163,29 @@ body {
 /* ============ desktop view .end// ============ */
 /* HEADER SECTION */
 /* HERO SECTION */
-.hero img {
+.hero {
+  background: linear-gradient(180deg, #002b4480, #00000080),
+    url(img/story.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 70vh;
   width: 100%;
-  object-fit: cover;
-  height: 80vh;
+  display: flex;
+  align-items: center;
+  margin-top: 62px;
+}
+
+.hero-header {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
-  .hero img {
+  .hero{
     height: 50vh;
   }
 }
