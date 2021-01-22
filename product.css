@@ -172,12 +172,31 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin-top: 60px;
+  position: relative;
 }
 
 .hero-img {
-  height: 200px;
+  height: 250px;
   margin: 0 auto;
+  filter: brightness(0.9);
+}
+
+.hero-header {
+  color: #f8f5f7;
+  position: absolute;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+@media screen and (max-width:991px) {
+
+  .hero-header {
+    font-size: 1.95rem;
+  }
 }
 
 /* HERO SECTION */
