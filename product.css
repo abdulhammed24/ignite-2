@@ -163,31 +163,29 @@ body {
 
 /* HERO SECTION */
 .hero {
-  background-color: #000;
+  background: url("img/pexels-skyler-ewing-4598194.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 50vh;
+  height: 70vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-top: 60px;
-  position: relative;
 }
 
 .hero-img {
-  height: 250px;
+  height: 200px;
   margin: 0 auto;
   filter: brightness(0.9);
 }
 
 .hero-header {
   color: #f8f5f7;
-  position: absolute;
-  margin-bottom: 0;
+  margin: 20px;
   font-size: 2.7rem;
   font-weight: 600;
   text-align: center;
